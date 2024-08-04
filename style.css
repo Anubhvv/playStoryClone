@@ -1,0 +1,116 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #3DDC84; /* Google Play primary color */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+/* App Details Section */
+.app-details {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.app-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.app-info {
+    flex-grow: 1;
+}
+
+.app-description {
+    margin: 10px 0;
+}
+
+.app-rating {
+    margin: 10px 0;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-install, .btn-share {
+    background-color: #3DDC84;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-install:hover, .btn-share:hover {
+    background-color: #32b15e;
+}
+
+/* App Reviews Section */
+.app-reviews {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.review {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+.review:last-child {
+    border: none;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #3DDC84;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .app-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .app-icon {
+        margin-bottom: 15px;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-install, .btn-share {
+        width: 100%;
+    }
+}
